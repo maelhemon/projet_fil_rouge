@@ -23,11 +23,17 @@ body{
     background-color:rgba(4,24,33,255);
 }
 
-div{
+.description{
 
   color : rgba(92,107,114,255);
 
 }
+
+.navigation{
+    color : white;
+
+}
+
 footer{
     color: rgba(92,107,114,255);
 }
