@@ -1,0 +1,39 @@
+
+.point{
+    color : rgb(33,201,153);
+ 
+}
+h1{
+
+ font-family:"Yeseva One", sans-serif;
+ color : white;
+}
+.titre1{
+    color : white;
+    
+} 
+
+.titre2{
+  
+    color : rgb(33,201,153);
+
+}
+body{
+
+    background-color:rgba(4,24,33,255);
+}
+
+div{
+
+  color : rgba(92,107,114,255);
+
+}
+footer{
+    color: rgba(92,107,114,255);
+}
+
+@media  and (min-width : ) {
+
+    
+}
+
