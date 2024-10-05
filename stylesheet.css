@@ -32,15 +32,22 @@ nav{
 }
 .nature{
     margin-right: 0.6em;
+    padding: 0.2em;
 }
 .portrait{
     margin-right: 0.6em;
+    padding: 0.2em;
 }
 .art{
     margin-right: 0.6em;
+    padding: 0.2em;
 }
 .urbain{
     margin-right: 0.6em;
+    padding: 0.2em;
+}
+.animaux{
+    padding: 0.2em;
 }
 .art:hover{
     background-color: #21d399;
@@ -56,6 +63,7 @@ nav{
 }
 .animaux:hover{
     background-color: #21d399;
+    
 }
 footer{
     color: rgba(92,107,114,255);
