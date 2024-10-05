@@ -1,4 +1,3 @@
-
 h1{
  font-family:"Yeseva One", sans-serif;
  color : white;
@@ -9,10 +8,8 @@ h2{
     font-family: "Yeseva One";
     font-size: 2.5em;
     margin-left: 2.5em;
-    margin-top: 1em;
-    
+    margin-top: 1em;    
 } 
-
 .couleur{
    color : rgb(33,201,153);
 }
@@ -20,11 +17,9 @@ body{
     background-color:rgba(4,24,33,255);
 }
 .description{
-
-  color : rgba(92,107,114,255);
-  font-family: "Montserrat",sans-serif;
-  
-  margin-left: 6.1em;
+    color : rgba(92,107,114,255);
+    font-family: "Montserrat",sans-serif;
+    margin-left: 6.1em;
 }
 nav{
     color : white;
@@ -32,12 +27,21 @@ nav{
     font-family: "Montserrat",sans-serif;
     display: flex;
     justify-content: center;
-    justify-content: space-between;
-
+    margin-top: 1.2em;
+    margin-bottom: 1.5em;
 }
-
-
-
+.nature{
+    margin-right: 0.6em;
+}
+.portrait{
+    margin-right: 0.6em;
+}
+.art{
+    margin-right: 0.6em;
+}
+.urbain{
+    margin-right: 0.6em;
+}
 .art:hover{
     background-color: #21d399;
 }
@@ -53,24 +57,15 @@ nav{
 .animaux:hover{
     background-color: #21d399;
 }
-
 footer{
     color: rgba(92,107,114,255);
     display: flex;
-    justify-content:center;
-    align-items:flex-end ;
-    
- 
-
-    
-    
+    justify-content:center;    
 }
 .type{
+    display: flex;
+    justify-content: center;
     font-size: 0.80em;
 }
 
-@media  and (min-width : ) {
-
-    
-}
 
