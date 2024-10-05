@@ -60,9 +60,11 @@ footer{
 .galerie{
   display: grid;
   grid-template-columns:200px 200px 200px 200px ;
-  grid-row: 150px;
+  grid-row: 200px 200px 200px 200px 200px 200px 200px ;
   gap :0.6em;
+  justify-content: center;
 }
+
 
 
 
