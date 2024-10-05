@@ -60,7 +60,7 @@ footer{
 .galerie{
     display: grid;
     grid-template-columns:200px 200px 200px 200px ;
-    gap :0.6em;
+    gap :1em;
     justify-content: center;
   }
 
@@ -80,7 +80,7 @@ footer{
     {  display: none; }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1300px)/*ffichage tablette*/
+@media only screen and (min-width: 768px) and (max-width: 1366px)/*ffichage tablette*/
 {
     .galerie img:nth-child(n + 16)
     {  display: none; }
