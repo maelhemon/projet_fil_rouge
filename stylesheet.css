@@ -58,13 +58,37 @@ footer{
     font-size: 0.80em;
 }
 .galerie{
-  display: grid;
-  grid-template-columns:200px 200px 200px 200px ;
-  gap :0.6em;
-  justify-content: center;
+    display: grid;
+    grid-template-columns:200px 200px 200px 200px ;
+    gap :0.6em;
+    justify-content: center;
+  }
+
+    
+
+
+@media only screen and (max-width: 768px) /*affichage mobile*/
+{
+    .galerie{
+        display: grid;
+        grid-template-columns:200px 200px 200px ;
+        gap :0.6em;
+        justify-content: center;
+    }
+    .galerie img:nth-child(n + 10)
+    {  display: none; }
 }
 
-
-
+@media only screen and (min-width: 768px) and (max-width: 1024px)/*ffichage tablette*/
+{
+    .galerie img:nth-child(n + 16)
+    {  display: none; }
+    .galerie{
+        display: grid;
+        grid-template-columns:200px 200px 200px 200px 200px;
+        gap :0.6em;
+        justify-content: center;
+      }
+}
 
 
