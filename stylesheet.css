@@ -58,34 +58,34 @@ footer{
     font-size: 0.80em; /*on centre et on modifie la taille de "Exercice HTML-CSS*/
 }
 
-.galerie{
-   display:grid;
-   grid-template-columns:200px 200px 200px 200px ;
-   justify-content: center;
-   gap: 0.6em;
-
+.galerie {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px ;
+    justify-content: center;
+    gap: 0.6em;
+    
 }
 /* Media Queries */
+/*responsive pour tablette*/
+@media screen and (min-width:481px) and (max-width:768px){
+  .galerie{
+    grid-template-columns:repeat(5,1fr);
+    gap: 0.6em;
 
-/*responsive tablette*/
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+  } 
+  .galerie img:nth-child(n + 15) { /*on affiche que les 16 premières photos*/
+    display: none;
+}
+}
+/*responsive pour mobile*/480px
+@media screen and ( min-width:250px ) and (max-width:480 ) {
     .galerie {
-        grid-template-columns: repeat(5, 1fr);
-        margin-left: 2em;
+
+        grid-template-columns:repeat(3,1fr);
+        gap: 0.6em;
         
     }
-    .galerie img:nth-child(n + 16) { /*on affiche que les 10 premières photos*/
-        display: none;
-    }
-}
-/*responsive pour mobile*/
-@media screen and (max-width: 768px) {
-    .galerie {
-        grid-template-columns: repeat(3, 1fr);
-        margin-left: 2em;
-        margin-right: 2em;
-    }
-    .galerie img:nth-child(n + 10) { /*on affiche que les 10 premières photos*/
+    .galerie img:nth-child(n + 9) { /*on affiche que les 10 premières photos*/
         display: none;
     }
     .en_tete {
