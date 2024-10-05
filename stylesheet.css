@@ -1,48 +1,72 @@
-nav.menu-nav ul li.btn{
-   list-style-type: none;
-   display : inline-block;
-}
 
-
-
-
-.point{
-    color : rgb(33,201,153);
- 
-}
 h1{
-
  font-family:"Yeseva One", sans-serif;
  color : white;
+ font-size: 1em;
 }
-.titre1{
+h2{
     color : white;
+    font-family: "Yeseva One";
+    font-size: 2.5em;
+    margin-left: 2.5em;
+    margin-top: 1em;
     
 } 
 
-.titre2{
-  
-    color : rgb(33,201,153);
-
+.couleur{
+   color : rgb(33,201,153);
 }
 body{
-
     background-color:rgba(4,24,33,255);
 }
-
 .description{
 
   color : rgba(92,107,114,255);
+  font-family: "Montserrat",sans-serif;
+  
+  margin-left: 6.1em;
+}
+nav{
+    color : white;
+    font-size: 0.8em;
+    font-family: "Montserrat",sans-serif;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
 
 }
 
-.navigation{
-    color : white;
 
+
+.art:hover{
+    background-color: #21d399;
+}
+.nature:hover{
+    background-color: #21d399;
+}
+.portrait:hover{
+    background-color: #21d399;
+}
+.urbain:hover{
+    background-color: #21d399;
+}
+.animaux:hover{
+    background-color: #21d399;
 }
 
 footer{
     color: rgba(92,107,114,255);
+    display: flex;
+    justify-content:center;
+    align-items:flex-end ;
+    
+ 
+
+    
+    
+}
+.type{
+    font-size: 0.80em;
 }
 
 @media  and (min-width : ) {
