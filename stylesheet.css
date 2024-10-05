@@ -29,7 +29,7 @@ body{
 .description{
     color : rgba(92,107,114,255);
     font-family: "Montserrat",sans-serif;
-    margin-left: 6.1em;
+    margin-left: 6.1em;  /*on laisse une marge à gauche*/
 }
 nav{
     color : white;
@@ -50,47 +50,56 @@ nav{
 footer{
     color: rgba(92,107,114,255);
     display: flex;
-    justify-content:center;    
+    justify-content:center;  /*on affiche les crédits au centre du bas de page*/  
 }
 .type{
     display: flex;
     justify-content: center;
-    font-size: 0.80em;
+    font-size: 0.80em; /*on centre et on modifie la taille de "Exercice HTML-CSS*/
 }
+
 .galerie{
-    display: grid;
-    grid-template-columns:200px 200px 200px 200px ;
-    gap :1em;
-    justify-content: center;
-  }
+   display:grid;
+   grid-template-columns:200px 200px 200px 200px ;
+   justify-content: center;
+   gap: 0.6em;
 
-    
-
-
-@media only screen and (max-width: 768px) /*affichage mobile*/
-{
-    
-    .galerie{
-        display: grid;
-        grid-template-columns:200px 200px 200px ;
-        gap :0.6em;
-        justify-content: center;
-    }
-    .galerie img:nth-child(n + 10)
-    {  display: none; }
 }
+/* Media Queries */
 
-@media only screen and (min-width: 768px) and (max-width: 1366px)/*ffichage tablette*/
-{
-    .galerie img:nth-child(n + 16)
-    {  display: none; }
-    .galerie{
-        display: grid;
-        grid-template-columns: 200px 200px 200px 200px 200px;
-        gap :0.6em;
-        justify-content: center;
-        padding: 1em;
-      }
+/*responsive tablette*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .galerie {
+        grid-template-columns: repeat(5, 1fr);
+        margin-left: 2em;
+        
+    }
+    .galerie img:nth-child(n + 16) { /*on affiche que les 10 premières photos*/
+        display: none;
+    }
+}
+/*responsive pour mobile*/
+@media screen and (max-width: 768px) {
+    .galerie {
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .galerie img:nth-child(n + 10) { /*on affiche que les 10 premières photos*/
+        display: none;
+    }
+    .en_tete {
+        flex-direction: column;
+        align-items: center;  /*on réaligne le nome solene et les logo des réseaux sociaux l'un en dessous de l'autre*/
+    }
+    
+    h2 {
+        font-size: 2em; /*on modifie la taille du titre 2*/
+    }
+
+    .description {
+        margin-left: 1em; /*idem*/
+    }
 }
 
 
