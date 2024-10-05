@@ -69,6 +69,7 @@ footer{
 
 @media only screen and (max-width: 768px) /*affichage mobile*/
 {
+    
     .galerie{
         display: grid;
         grid-template-columns:200px 200px 200px ;
@@ -86,9 +87,12 @@ footer{
     .galerie{
         display: grid;
         grid-template-columns:200px 200px 200px 200px 200px;
-        gap :0.6em;
+       
+        gap :0.6;
         justify-content: center;
+        padding: 1em;
       }
 }
+
 
 
