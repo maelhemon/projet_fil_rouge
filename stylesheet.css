@@ -80,15 +80,14 @@ footer{
     {  display: none; }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px)/*ffichage tablette*/
+@media only screen and (min-width: 768px) and (max-width: 1300px)/*ffichage tablette*/
 {
     .galerie img:nth-child(n + 16)
     {  display: none; }
     .galerie{
         display: grid;
-        grid-template-columns:200px 200px 200px 200px 200px;
-       
-        gap :0.6;
+        grid-template-columns: 200px 200px 200px 200px 200px;
+        gap :0.6em;
         justify-content: center;
         padding: 1em;
       }
