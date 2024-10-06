@@ -62,7 +62,7 @@ footer{
     .galeie{
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        justify-content: center;
+        justify-items: center;
         gap:0.6em;
     }  
 }
@@ -73,7 +73,7 @@ footer{
         grid-template-columns:repeat(5,1fr);
         grid-template-rows: repeat(3,1fr);
         gap: 0.6em;
-        justify-content: center;
+        justify-items: center;
     }
     .galerie img:nth-child(n + 9) {
           display: none;
@@ -84,16 +84,17 @@ footer{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap:0.6em;
-        justify-content:center;
+        justify-items:center;
       
 
     }
     .en_tete{
         display: flex;
-        align-items: flex-end;
+        flex-direction: column;
         justify-content: center;
         
     }
+    
     h2{
         font-size: 2em;
         margin-left: 0.7em;
