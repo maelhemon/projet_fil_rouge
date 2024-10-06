@@ -58,7 +58,53 @@ footer{
     font-size: 0.80em; /*on centre et on modifie la taille de "Exercice HTML-CSS*/
     
 }
-.galeie{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+@media  screen and (min-width:1025px) {
+    .galeie{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: center;
+        gap:0.6em;
+    }  
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){  
+    .galeie{
+        display: grid;
+        grid-template-columns:repeat(5,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 0.6em;
+        justify-content: center;
+    }
+    .galerie img:nth-child(n + 9) {
+          display: none;
+     }
+}
+@media screen and (max-width:767px) {
+    .galeie{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:0.6em;
+        justify-content:center;
+      
+
+    }
+    .en_tete{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        
+    }
+    h2{
+        font-size: 2em;
+        margin-left: 0.7em;
+    }
+    .description{
+        font-size: 1.2em;
+        margin-left: 0.7em;
+
+    }
+    .galerie img:nth-child(n + 9) {
+          display: none; 
+    }
+    
 }
