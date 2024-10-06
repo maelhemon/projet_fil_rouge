@@ -10,7 +10,6 @@
 .reseaux {
     display: flex; /* Aligne les icônes en ligne */
     gap: 1em;/* Espace entre les icônes */
-    
     font-size:1.4em;
 }
 h2{
@@ -34,7 +33,7 @@ body{
 nav{
     color : white;
     font-size: 0.8em;
-    font-family: "Montserrat",sans-serif;
+    font-family: "Montserrat",sans-serif; /*on applique une police*/
     display: flex;
     justify-content: center;/*on aligne les éléments du menu de navigation*/
     margin-top: 1.2em;
@@ -58,31 +57,37 @@ footer{
     font-size: 0.80em; /*on centre et on modifie la taille de "Exercice HTML-CSS*/
     
 }
+/*responsuve ordi*/
 @media  screen and (min-width:1025px) {
     .galeie{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        justify-items: center;
-        gap:0.6em;
+        display: grid;     /*on initialise grid pour mettre en forme les images*/
+        grid-template-columns: repeat(4,1fr); /*on crée 4 colonnes de taille 1 fraction chacune (repeat permet de simplier au lieu d'ecrire 1fr 1fr 1fr 1fr*/
+        grid-template-rows: repeat(6,1fr);
+        justify-items: center;/*on centre le grid au milieu de la page*/
+        gap:0.6em;/*on laisse de l'espace entre les images*/
+   
     }  
 }
-
+/*responsive tablette*/
 @media screen and (min-width:768px) and (max-width:1024px){  
     .galeie{
         display: grid;
-        grid-template-columns:repeat(5,1fr);
+        grid-template-columns:repeat(5,1fr);/*On crée 5 colonnes (donc 5 images)*/
         grid-template-rows: repeat(3,1fr);
         gap: 0.6em;
         justify-items: center;
+        
     }
-    .galerie img:nth-child(n + 9) {
+    .galerie img:nth-child(n +15) {/*on affiche que 9 images, les autres sont cachées au delà*/
           display: none;
      }
 }
+/*responsive mobile*/
 @media screen and (max-width:767px) {
     .galeie{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3,1fr);/*on crée 3 colonnes */
+        grid-template-rows: repeat(3,1fr);
         gap:0.6em;
         justify-items:center;
       
@@ -93,18 +98,17 @@ footer{
         flex-direction: column;
         justify-content: center;
         
-    }
+    } 
     
     h2{
-        font-size: 2em;
-        margin-left: 0.7em;
+        margin-left: 0.7em; /*on diminue la marge à gauche du titre*/
     }
     .description{
         font-size: 1.2em;
         margin-left: 0.7em;
 
     }
-    .galerie img:nth-child(n + 9) {
+    .galerie img:nth-child(n + 9) {/*on affiche que 9 photos*/
           display: none; 
     }
     
